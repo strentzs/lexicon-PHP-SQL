@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+
+    /* background: #F8F8F8; */
+    background: radial-gradient(#F8F8F8, #fff3b1, #F8F8F8, #fff3b1, #F8F8F8, #fff3b1, #F8F8F8, #fff3b1, #F8F8F8, #fff3b1, #F8F8F8, #fff3b1, #F8F8F8, #fff3b1, #F8F8F8, #fff3b1, #F8F8F8, #fff3b1, #F8F8F8, #fff3b1, #F8F8F8, #fff3b1, #F8F8F8, #fff3b1, #F8F8F8, #fff3b1, #F8F8F8, #fff3b1);
+    backdrop-filter: blur(10px);
+}
+
+body h1,
+body h2,
+body h3,
+body thead {
+    /* color: #8D4E46; */
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body p, 
+body span,
+body ul,
+body li,
+body a, 
+body tbody, 
+body input,
+body select,
+body label,
+body textarea {
+    font-family: 'Lato', sans-serif;
+}
+
+body h1::selection,
+body h2::selection,
+body h3::selection,
+body thead::selection,
+body p::selection, 
+body span::selection,
+body ul::selection,
+body li::selection,
+body a::selection, 
+body i::selection, 
+body div::selection, 
+body tbody::selection, 
+body input::selection,
+body select::selection,
+body label::selection,
+body textarea::selection, 
+body button::selection,
+body td::selection {
+    background-color: #dfb567;
+}
+
+body li {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header {
+    position: relative;
+
+    width: 100%;
+    height: auto;
+
+    padding: 20px 0 40px 0;
+}
+
+.sub_container {
+    position: relative;
+
+    width: 100%;
+    height: auto;
+
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+}
+
+.block {
+    position: relative;
+
+    height: auto;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block#B1,
+.block#B4 {
+    width: 30%;
+}
+
+.block#B2,
+.block#B3 {
+    width: 70%;
+}
+
+.sub_block {
+    position: relative;
+
+    height: auto;
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub_block#SB1,
+.sub_block#SB2 {
+    width: 100%;
+}
+
+.sub_block#SB4 {
+    width: 100%;
+}
+
+.sub_block#SB1 h3,
+.sub_block#SB2 h3,
+.sub_block#SB4 h3,
+.sub_block#SB1 input,
+.sub_block#SB1 select,
+.sub_block#SB1 label,
+.sub_block#SB2 p,
+.sub_block#SB2 table,
+.sub_block#SB4 button,
+.sub_block#SB4 input {
+    position: relative;
+
+    width: 100%;
+}
+
+.sub_block h3 {
+    padding: 10px;
+}
+
+.sub_block select {
+    margin: 5px 0;
+    padding: 3px 12px;
+
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 0 2px 0px #A8A8A8;
+    color: #707070;
+}
+
+.sub_block table {
+    text-align: center;
+    border-radius: 6px;
+    border-spacing: 24px 0;
+}
+
+.sub_block table,
+.sub_block table tr td {
+    padding: 5px;
+    border: solid 1px #a8a8a877;
+    border-collapse: collapse;
+}
+
+.sub_block table tbody tr {
+    vertical-align: top;
+    line-height: 24px;
+}
+
+.sub_block table tbody tr td:nth-child(3) {
+    font-size: 14px;
+}
+
+.sub_block input[type="text"],
+.sub_block textarea {
+    margin: 5px 0;
+    padding: 3px 12px;
+
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 0 2px 0px #A8A8A8;
+}
+
+.sub_block textarea {
+    resize: none;
+}
+
+.sub_block input[type="submit"],
+.sub_block#SB4 button,
+.sub_block#SB2 button {
+    margin: 10px 0;
+    padding: 6px 12px;
+
+    background-color: rgb(255, 179, 37);
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 0 2px 0px #d89519;
+    color: #FFFFFF;
+
+    font-weight: 600;
+}
+
+.sub_block#SB3 p,
+.sub_block#SB4 p {
+    margin: 10px 0;
+}
+
+.sub_block hr {
+    position: relative;
+
+    width: 100%;
+
+    margin: 10px 0;
+}
+
+.sub_block span.italic {
+    font-style: italic;
+    color: #707070;
+}
+
+@media screen and (max-width: 1200px) {
+    .sub_block#SB2,
+    .sub_block#SB4 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .sub_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block#B1,
+    .block#B2,
+    .block#B3,
+    .block#B4 {
+        width: 100%;
+    }
+
+    .sub_block#SB4 {
+        width: 50%;
+    }
+}
